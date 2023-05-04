@@ -14,7 +14,6 @@ describe('Login', () => {
         cy.get(loc.LOGIN.passwordInput).type('123123', { log: false });
         cy.get(loc.LOGIN.doLoginBtn).click();
         cy.contains('Your email or password is incorrect!').should('exist')
-        
     })
 
     it.only('Login without filling fields', () => {
@@ -22,6 +21,5 @@ describe('Login', () => {
         cy.xpath(loc.HOME.loginBtn).click();
         cy.get(loc.LOGIN.doLoginBtn).click();
         cy.url().should('contain', '/login')
-        
     })
 })

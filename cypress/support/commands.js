@@ -1,6 +1,5 @@
 import loc from '../support/locators'
 
-
 Cypress.Commands.add('login', () => {
     cy.xpath(loc.HOME.loginBtn).click();
     cy.get(loc.LOGIN.emailInput).type(Cypress.env('email'));
