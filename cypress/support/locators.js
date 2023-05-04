@@ -6,6 +6,7 @@ const locators = {
     LOGIN: {
         emailInput: '[data-qa="login-email"]',
         passwordInput: '[data-qa="login-password"]',
+        doLoginBtn: '[data-qa="login-button"]',
     }
 }
 
