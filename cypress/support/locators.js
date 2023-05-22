@@ -1,9 +1,10 @@
 const locators = {
     HOME: {
-        loginBtn: `//*[@class='fa fa-lock']/..`,
+        loginBtn: "//a[@href='/login']",
         newsletterInput: '#susbscribe_email',
         newsletterSubmitBtn: '#subscribe',
         newsletterSuccessMessage: '.alert-success',
+        logoutBtn: "//a[@href='/logout']",
     },
 
     LOGIN: {
