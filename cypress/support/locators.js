@@ -1,6 +1,9 @@
 const locators = {
     HOME: {
         loginBtn: `//*[@class='fa fa-lock']/..`,
+        newsletterInput: '#susbscribe_email',
+        newsletterSubmitBtn: '#subscribe',
+        newsletterSuccessMessage: '.alert-success',
     },
 
     LOGIN: {
