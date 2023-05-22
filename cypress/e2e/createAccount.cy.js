@@ -17,12 +17,12 @@ describe('Create account', () => {
         cy.get(loc.CREATEACCOUNT.emailInput).type(utils.getRandomEmail());
         cy.get(loc.CREATEACCOUNT.signUpBtn).click();
         cy.get(loc.CREATEACCOUNT.createAccountBtn).click();
-        cy.url().should('contain', '/signup')
+        cy.url().should('contain', '/signup');
     });
 
     it('Create account without filling name and email', () => {
         cy.xpath(loc.HOME.loginBtn).click();
         cy.get(loc.CREATEACCOUNT.signUpBtn).click();
-        cy.url().should('contain', '/login')
+        cy.url().should('contain', '/login');
     });
-})
+});
