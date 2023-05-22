@@ -18,5 +18,11 @@ describe('Create account', () => {
         cy.get(loc.CREATEACCOUNT.signUpBtn).click();
         cy.get(loc.CREATEACCOUNT.createAccountBtn).click();
         cy.url().should('contain', '/signup')
-    })
+    });
+
+    it.only('Create account without filling name and email', () => {
+        cy.xpath(loc.HOME.loginBtn).click();
+        cy.get(loc.CREATEACCOUNT.signUpBtn).click();
+        cy.url().should('contain', '/login')
+    });
 })
